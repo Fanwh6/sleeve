@@ -1,0 +1,33 @@
+<!--pages/home/home.wxml-->
+<l-loadmore show type="{{loadingType}}" end-text="- 没有更多数据了 -">
+    <view slot="content" class="container" >
+        <!-- 折扣活动 -->
+        <!-- <image src="{{img}}" class="top-theme" mode="widthFix"/> -->
+        <image src="{{themeA.entrance_img}}" class="top-theme" mode="widthFix" />
+        <!-- 轮播数据 -->
+        <swiper class="swiper" indicator-dots indicator-active-color="#157658" autoplay interval="3000" circular>
+            <block wx:for="{{bannerB.items}}" wx:key="index">
+                <swiper-item>
+                    <image class="swiper" src="{{item.img}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+        <!-- 宫格 -->
+        <s-category-grid grid="{{gridC}}"></s-category-grid>
+        <!-- 优惠券 -->
+        <image src="{{activityD.entrance_img}}" class="activity"></image>
+        <!-- 每周更新主题内容 -->
+        <s-spu-scroll wx:if="{{themeE.online}}" theme="{{themeE}}" spu-list="{{themeESpuList}}"></s-spu-scroll>
+        <!-- 臻选主题 -->
+        <image src="{{themeF.entrance_img}}" class="quality" mode="widthFix"></image>
+        <!-- 热卖主题+商品  bannner -->
+        <s-hot-list banner="{{bannerG}}"></s-hot-list>
+        <!-- 穿搭主题 -->
+        <image src="{{themeH.entrance_img}}" mode="widthFix" class="fashion"></image>
+        <!-- 推荐商品 -->
+        <view class="spu-bottom">
+            <image src="/imgs/home/title@interest.png" class="title-spu-bottom" mode="widthFix"></image>
+            <l-water-flow generic:l-water-flow-item="s-spu-preview" column-gap="20rpx"></l-water-flow>
+        </view>
+    </view>
+</l-loadmore>

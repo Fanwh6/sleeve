@@ -1,0 +1,23 @@
+{
+  "name": "minapp",
+  "version": "1.0.0",
+  "description": "jnk",
+  "main": "dist/minapp.js",
+  "scripts": {
+    "test": "echo 0",
+    "clear": "minapp clear dist",
+    "build": "minapp build --pretty",
+    "dev": "minapp dev"
+  },
+  "files": [
+    "dist/",
+    "package-lock.json",
+    "README.md"
+  ],
+  "author": "l;",
+  "license": "MIT",
+  "devDependencies": {
+    "@minapp/core": "^2.0.0",
+    "@minapp/wx": "latest"
+  }
+}

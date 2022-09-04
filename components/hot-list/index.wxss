@@ -1,0 +1,30 @@
+/* components/hot-list/index.wxss */
+/* 导入点击动画 */
+@import "../../wxss/sleeve.wxss";
+.container{
+    background-color: #fff;
+}
+.head-img{
+    width: 690rpx;
+    margin: 44rpx 0 0 30rpx;
+}
+.inner-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28rpx;
+}
+.left{
+    width: 344rpx;
+}
+.right{
+    width: 400rpx;
+}
+.rightTop{
+    width: 100%;
+    display: flex;
+    margin-bottom: 6rpx;
+}
+.rightBottom{
+    width: 100%;
+    display: flex;
+}

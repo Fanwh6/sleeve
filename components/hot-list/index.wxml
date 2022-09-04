@@ -1,0 +1,17 @@
+<!--components/hot-list/index.wxml-->
+<view class="container">
+    <image src="{{banner.img}}" class="head-img" mode="widthFix"></image>
+    <view class="inner-container">
+        <view hover-class="hover_click" hover-stay-time="200">
+            <image src="{{left.img}}" class="left" mode="widthFix"></image>
+        </view>
+        <view class="right">
+            <view hover-class="hover_click" hover-stay-time="200">
+                <image src="{{rightTop.img}}" class="rightTop" mode="widthFix"></image>
+            </view>
+            <view hover-class="hover_click" hover-stay-time="200">
+                <image src="{{rightBottom.img}}" class="rightBottom" mode="widthFix"></image>
+            </view>
+        </view>
+    </view>
+</view>

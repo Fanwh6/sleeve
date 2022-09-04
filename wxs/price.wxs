@@ -1,0 +1,21 @@
+function mainPrice(price,discountPrice){
+  // 显示
+  if (discountPrice){
+    return discountPrice
+  } else {
+    return price
+  }
+}
+function slashedPrice(price,discountPrice){
+  if (discountPrice){
+    return price
+  }else{
+    return
+  }
+}
+// wxs 中必须使用 ES5 语法
+module.exports={
+  mainPrice:mainPrice,
+  slashedPrice:slashedPrice
+}
+
