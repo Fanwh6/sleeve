@@ -1,7 +1,7 @@
 <!--components/spu/index.wxml-->
 <!-- 导入 wxs -->
 <wxs src="../../wxs/price.wxs" module="p"></wxs>
-<view class="container">
+<view class="container" bind:tap="onItemTap" data-pid="{{data.id}}">
     <!-- mode="widthFix" -->
     <!-- style="width:{{w}}rpx;height:{{h}}rpx" bind:load="onImgLoad" -->
     <image src="{{data.img}}" style="width:{{w}}rpx;height:{{h}}rpx" bind:load="onImgLoad"></image>

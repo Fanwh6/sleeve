@@ -1,0 +1,31 @@
+<!--components/spu-description/index.wxml-->
+<!-- 导入 wxs -->
+<wxs src="../../wxs/price.wxs" module="p"></wxs>
+<view class="container">
+    <view class="left">
+        <text class="title">{{spu.title}}</text>
+        <view class="tags">
+            <block wx:for="{{tags}}" wx:key="index">
+                <l-tag type="reading" wx:if="{{item}}" l-class="l-tag">{{item}}</l-tag>
+            </block>
+        </view>
+        <text class="sub-title">{{spu.subtitle}}</text>
+        <view class="price">
+            <l-price autofix color="#157658" value-size="44" unit-size="20"
+                value="{{p.mainPrice(spu.price,spu.discount_price)}}"></l-price>
+            <l-price wx:if="{{spu.discount_price}}" value="{{p.slashedPrice(spu.price,spu.discount_price)}}" deleted
+                color="#999" size="34" l-class="discount-img"></l-price>
+            <l-tag l-class="discount-tag" type="reading" bg-color="#c93756" size="super-mini" shape="circle"
+                wx:if="{{spu.discount_price}}">折扣</l-tag>
+        </view>
+    </view>
+    <view class="right">
+        <l-button special open-type="share">
+            <view class="inner">
+                <l-icon name="share" size="24" color="#157658" />
+                <text>分</text>
+                <text>享</text>
+            </view>
+        </l-button>
+    </view>
+</view>

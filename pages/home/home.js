@@ -1,9 +1,9 @@
 // pages/home/home.js
-import { Activity } from "../../model/activity"
-import { Banner } from "../../model/banner"
-import { Category } from "../../model/category"
-import { SpuPaging } from "../../model/spu-paging"
-import { Theme } from "../../model/theme"
+import { Activity } from "../../models/activity"
+import { Banner } from "../../models/banner"
+import { Category } from "../../models/category"
+import { SpuPaging } from "../../models/spu-paging"
+import { Theme } from "../../models/theme"
 import { Paging } from "../../utils/paging"
 Page({
 

@@ -1,4 +1,29 @@
 /**app.wxss**/
-page{
+page {
   background-color: #f5f5f5;
+}
+
+@font-face {
+  font-family: 'sleeve';
+  /* Project id 3641739 */
+  src: url('//at.alicdn.com/t/c/font_3641739_lpw16fdzqs.woff2?t=1662867342821') format('woff2'),
+    url('//at.alicdn.com/t/c/font_3641739_lpw16fdzqs.woff?t=1662867342821') format('woff'),
+    url('//at.alicdn.com/t/c/font_3641739_lpw16fdzqs.ttf?t=1662867342821') format('truetype');
+}
+
+.sleeve {
+  font-family: 'sleeve' !important;
+  color: #157658 !important;
+}
+
+.l-icon-home:before {
+  /* &#xe6af -> \e6af */
+  content: '\e65b';
+}
+
+scroll-view ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
 }
