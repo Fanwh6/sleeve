@@ -5,7 +5,7 @@
     "compileHotReLoad": true,
     "urlCheck": false
   },
-  "libVersion": "2.17.0",
+  "libVersion": "2.26.0",
   "condition": {
     "miniprogram": {
       "list": [
@@ -26,6 +26,20 @@
         {
           "name": "分类",
           "pathName": "pages/category/category",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/cart/cart",
+          "pathName": "pages/cart/cart",
           "query": "",
           "launchMode": "default",
           "scene": null
